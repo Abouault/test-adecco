@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 20% 0 20%;
+}
+
+/* HEADER */
+
+header {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.first_nav_link {
+    border: 1px solid black;
+    box-shadow: 0px 5px 5px black;
+}
+
+.second_nav_link {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 5px 5px black;
+}
+
+.third_nav_link {
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+
+li:hover {
+    background-color: #87CEEB;
+}
+
+/* MAIN */
+
+.main_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.image img {
+    width: 100%;
+    height: 250px;
+}
+
+
+.paragraph {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.paragraph p {
+    text-align: left;
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0 20% 0 20%;
+}
+
+.footer_image {
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+@media (max-width: 740px) {
+    .container {
+        margin: 0 10% 0 10%;
+    }
+
+    /* HEADER */
+
+    header {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .menu ul {
+        margin-bottom: 20px;
+    }
+
+    /* MAIN */
+
+    .main_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .image img {
+        height: 200px;
+    }
+
+    .paragraph {
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    .paragraph p {
+        overflow: scroll;
+        height: 300px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        margin: 0;
+    }
+
+    .footer_image {
+        margin-top: 15px;
+        height: 100px;
+    }
+
+    footer p {
+        display: none;
+    }
+}
